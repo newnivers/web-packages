@@ -18,8 +18,12 @@ jobs:
               - 'packages/react/src/hooks/**'
       - name: Set matrix
         id: set-matrix
-        run: echo "::set-output name=matrix::[\"react\"]"
-        if: steps.filter.outputs.changes != '[]'
+        run: |
+          if [[ "${{ steps.filter.outputs.changes }}" == "[]" ]]; then
+          echo "::set-output name=matrix::[]"
+          else
+          echo "::set-output name=matrix::[\"react\"]"
+          fi
   run:
     runs-on: ubuntu-latest
     needs: filter-changed-packages
