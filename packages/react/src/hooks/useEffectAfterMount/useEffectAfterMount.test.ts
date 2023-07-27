@@ -22,4 +22,15 @@ describe('useEffectAfterMount', () => {
 
     expect(cb).not.toHaveBeenCalled();
   });
+
+  it('의존성 배열에 값이 주어진다면, 인자로 넘긴 callback은 재렌더링 이후 실행된다', () => {
+    const { rerender } = renderHook(({ deps }) => useEffectAfterMount(cb, deps), {
+      initialProps: { deps: [0] },
+    });
+
+    expect(cb).not.toHaveBeenCalled();
+
+    rerender({ deps: [1] });
+    expect(cb).toHaveBeenCalled();
+  });
 });
