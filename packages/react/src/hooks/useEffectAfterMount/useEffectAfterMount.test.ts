@@ -1,9 +1,9 @@
 import { renderHook } from '@testing-library/react';
 
-import { useEffectAfterMount } from './useEffectAfterMount';
+import { Cleanup, useEffectAfterMount } from './useEffectAfterMount';
 
 describe('useEffectAfterMount', () => {
-  let cb: () => void;
+  let cb: () => Cleanup;
 
   beforeEach(() => {
     cb = jest.fn();
