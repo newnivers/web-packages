@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/newnivers/web-packages/compare/@newnivers/react@0.0.2...@newnivers/react@0.0.3) (2023-07-27)
+
+
+### Bug Fixes
+
+* **react/hooks:** 콜백 리턴 타입 수정 ([#11](https://github.com/newnivers/web-packages/issues/11)) ([461822c](https://github.com/newnivers/web-packages/commit/461822c22c49ee32794c14d5ea00a56840a8d4d6))
+
+
+### Features
+
+* **react/hooks:** 마운트 되었는지 식별할 수 있는 useIsMounted hooks 구현 ([#11](https://github.com/newnivers/web-packages/issues/11)) ([d027f28](https://github.com/newnivers/web-packages/commit/d027f28715dee359e0fc1830e0a1e736065e82bd))
+
+
+
+
+
 ## [0.0.2](https://github.com/newnivers/web-packages/compare/@newnivers/react@0.0.1...@newnivers/react@0.0.2) (2023-07-26)
 
 
