@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/newnivers/web-packages/compare/@newnivers/react@0.0.6...@newnivers/react@0.0.7) (2023-08-03)
+
+
+### Features
+
+* **hooks/useOffsetSize:** useOffsetSize custom hook 구현 ([de63554](https://github.com/newnivers/web-packages/commit/de63554d1b709fedd0aba896d2597b262e547627)), closes [#16](https://github.com/newnivers/web-packages/issues/16) [#23](https://github.com/newnivers/web-packages/issues/23)
+
+
+
+
+
 ## [0.0.6](https://github.com/newnivers/web-packages/compare/@newnivers/react@0.0.5...@newnivers/react@0.0.6) (2023-08-02)
 
 
